@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button that opens a form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <button id="btnClass">
+    My Account
+  </button>
+  <form method="POST" id="formClass">
+    <input name="question" placeholder="Username" /><br />
+    <button type="button" name="answer" id="answerMC" value="Add MC answer">Enter your username</button><br>
+    <input name="answer_input" id="answerInput" placeholder="Enter an answer" hidden /><br />
+    <input name="question" placeholder="Password" /><br />
+    <button type="button" name="answer" id="answerMC" value="Add MC answer">Password</button><br>
+    <input name="answer_input" id="answerInput" placeholder="Enter your password" hidden /><br />
+    <button type="button" name="answer" value="Add short answer">Add short answer</button><br>
+    <input type="radio" name="required" value="Mandatory">Mandatory<br>
+    <input type="radio" name="required" value="Optional">Optional<br>
+    <button type="submit" name="submit_question" value="Submit">Submit</button>
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
